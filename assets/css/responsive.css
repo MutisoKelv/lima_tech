@@ -32,6 +32,27 @@
   .section-title .image {
     display: none;
   }
+
+  /* njifhdsuifdofk */
+  .sect {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .sect .content {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .sect .content span {
+    font-size: 12.5px;
+  }
+  .sect .content h2 {
+    font-size: 28px;
+  }
+  .sect .image {
+    display: none;
+  }
   .read-more-btn {
     font-size: 14px;
   }

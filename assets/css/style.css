@@ -97,8 +97,8 @@ p:last-child {
 }
 
 .ptb-110 {
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .bg-f2feee {
@@ -121,7 +121,22 @@ img {
           align-items: center !important;
   margin-right: -15px;
   margin-left: -15px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+.sect {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center !important;
+  -webkit-box-align: center !important;
+          align-items: center !important;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 0px;
+  margin-top: 50px;
 }
 
 .section-title .content {
@@ -132,14 +147,32 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.sect .content {
+  -ms-flex: 0 0 58.333333%;
+  -webkit-box-flex: 0;
+          flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-.section-title .content span {
+.section-title .content  span {
   display: block;
   color: #4ac728;
   text-transform: uppercase;
   margin-bottom: 5px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 40px;
+  font-family: "Dosis", sans-serif;
+}
+
+.sect .content  span {
+  display: block;
+  color: #4ac728;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 40px;
   font-family: "Dosis", sans-serif;
 }
 
@@ -149,19 +182,27 @@ img {
   font-weight: 700;
 }
 
-.section-title .content p {
+.sect .content h2 {
   margin-bottom: 0;
-  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
-.section-title .image {
-  -ms-flex: 0 0 41.666667%;
-  -webkit-box-flex: 0;
-          flex: 0 0 41.666667%;
-  max-width: 41.666667%;
-  padding-left: 15px;
-  padding-right: 15px;
+.section-title .content  p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 15px;
+
 }
+
+.sect .content  p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 15px;
+
+}
+
+
 
 /*btn-primary*/
 .btn {
@@ -1082,7 +1123,7 @@ Main Banner Area CSS
   height: 100%;
   position: relative;
   text-align: center;
-  background-image: url(../img/banner-img1.jpg);
+  background-image: url(../img/banner-img3.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1576,7 +1617,7 @@ Main Banner Area CSS
 Services Area CSS
 =================================================*/
 .services-area {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   position: relative;
   z-index: 1;
 }
@@ -1607,6 +1648,21 @@ Services Area CSS
   border: 1px solid #dcffd0;
   border-radius: 50%;
   color: #4ac728;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-services-box-1 .icon {
+  margin-bottom: 18px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border: 1px solid #dcffd0;
+  border-radius: 50%;
+  color: #282bc7;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1668,6 +1724,14 @@ Services Area CSS
   background: #4ac728;
 }
 
+.single-services-box-1:hover .icon {
+  border-color: #4028c7;
+  color: #ffffff;
+}
+
+.single-services-box-1:hover .icon::before {
+  background: #2833c7;
+}
 /*================================================
 Services Details Area CSS
 =================================================*/
@@ -1864,7 +1928,7 @@ About Area CSS
 Why Choose Us Area CSS
 =================================================*/
 .why-choose-area {
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
   position: relative;
   z-index: 1;
 }
@@ -6074,7 +6138,7 @@ Footer Area CSS
   font-weight: 700;
 }
 
-.single-footer-widget h3::before {
+/* .single-footer-widget h3::before {
   content: '';
   position: absolute;
   left: 0;
@@ -6082,7 +6146,7 @@ Footer Area CSS
   width: 40px;
   height: 2px;
   background: #4ac728;
-}
+} */
 
 .single-footer-widget .footer-services-list {
   padding-left: 0;
